@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>inm420jsl</title>
+      
+        <!-- Required Core Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css" integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Lightbox CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+        
+
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+      <header>
+        <div class="logo-container">
+            <img src="assets/images/logo-transparent-png.png" id="logo"/>
+        </div>
+
+      <!-- this is the nav.it contains a hanmburger,a list -->
+        <nav>
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="menu">
+                <li>SHOP</li>
+                <li>MEMBERSHIP</li>
+                <li>DISCOVER</li>
+                <li>SHOWROOM</li>
+                <li>SALE</li>
+                <li>TRADE</li>
+            </ul>
+        </nav>
+
+        <button type="button" id="search-btn">Search</button> 
+    </header>
+
+      <!-- hero image part -->
+      <section class="hero">
+        <div class="hero-section">
+          <img src="assets/images/heroimage.jpg" alt="Furniture Store" class="hero-image">
+          <div class="hero-text">
+              <h1>Welcome to Our Furniture Store</h1>
+              <p>Discover our collections of furniture</p>
+          </div>
+        </div>
+      </section>
+
+      <!--BELOW HERO PART  -->
+      <section class="below-hero">
+        <div class="container">
+            <div class="text-content">
+                <h2>20% OFF YOUR NEW FUNITURES</h2>
+                <p>For a limited time only, we're offering you 20% off new-season pieces from iconic brands on JKDeer apply; </p>
+                <p>Read them here.</p>
+            </div>
+            <div class="image-content">
+                <img src="assets/images/7.jpg" alt="Below Hero Image" class="below-hero-img">
+            </div>
+        </div>
+    </section>
+    
+      
+      <!-- glide part -->
+
+      <section class="glide-text">
+        <h2>TOP COLLECTIONS</h2>
+        <p>Shop our selection of best-sellers now</p>
+      </section>
+
+      <!-- Glide structure with Lightbox integration -->
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <!-- Each slide item contains an <a> tag with Lightbox data attribute -->
+                <li class="glide__slide">
+                    <a href="assets/images/1.jpg" data-lightbox="glide-gallery" data-title="Description 1">
+                        <img src="assets/images/1.jpg" alt="Description 1">
+                    </a>
+                </li>
+
+                <li class="glide__slide">
+                    <a href="assets/images/2.jpg" data-lightbox="glide-gallery" data-title="Description 2">
+                        <img src="assets/images/2.jpg" alt="Description 2">
+                    </a>
+                </li>
+
+                <li class="glide__slide">
+                    <a href="assets/images/3.jpg" data-lightbox="glide-gallery" data-title="Description 3">
+                        <img src="assets/images/3.jpg" alt="Description 3">
+                    </a>
+                </li>
+
+                <li class="glide__slide">
+                  <a href="assets/images/4.jpg" data-lightbox="glide-gallery" data-title="Description 4">
+                      <img src="assets/images/4.jpg" alt="Description 4">
+                  </a>
+              </li>
+
+              <li class="glide__slide">
+                <a href="assets/images/5.jpg" data-lightbox="glide-gallery" data-title="Description 5">
+                    <img src="assets/images/5.jpg" alt="Description 5">
+                </a>
+              </li>
+
+              <li class="glide__slide">
+                <a href="assets/images/6.jpg" data-lightbox="glide-gallery" data-title="Description 6">
+                    <img src="assets/images/6.jpg" alt="Description 6">
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- discount part，using Granim.js -->
+      <section id="gradient-background">
+        <canvas id="granim-canvas"></canvas>
+        <div class="content">
+            <div class="granim-logo-container">
+                <img src="assets/images/logo-transparent-png.png" alt="logo">
+            </div>
+            <div class="text-content">
+                <h2>25% OFF SITE-WIDE + 20% BACK IN VOUCHER*</h2>
+                <h3>For $200* annually, member benefits include:</h3>
+                <p>25% off site-wide for an entire year.</p>
+                <p>20% back in voucher*.</p>
+                <p>Complimentary design consultation.</p>
+                <p>Dedicated concierge order service.</p>
+                <p>VIP access to sales events.</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- map section,using leaflet -->
+
+      <section class="store-location">
+        <h2>Visit Our Showroom in Toronto</h2>
+        <p>Discover our wide range of modern furniture and get a real feel for your new home interior. Our friendly staff are here to help you find exactly what you need.</p>
+  
+        <div class="store-details">
+            <p><strong>Opening Hours:</strong> Monday to Friday - 9 AM to 8 PM, Saturday - 10 AM to 6 PM, Closed on Sundays</p>
+            <p><strong>Address:</strong> 123 Furniture Ave, Toronto, ON, A1B 2C3</p>
+            <p><strong>Directions:</strong> Easily accessible by TTC - located just 5 minutes from Osgoode Subway Station. Parking available onsite.</p>
+            <p><strong>Contact Us:</strong> Phone: (416) 555-0192 | Email: info@torontofurniturestore.ca</p>
+        </div>
+    
+        <div id="map" style="height: 400px;"></div>
+      </section>
+
+      <!-- FOOTER SPACE -->
+      <section class="footer-main">
+        <div class="flex-container">
+            <div class="footer-column">
+                <h3>JKDeer</h3>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Our Factory</li>
+                    <li>Reviews</li>
+                    <li>Gift Card</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li>Track My Order</li>
+                    <li>Shipping Policy</li>
+                    <li>Returns & Exchanges</li>
+                    <li>Faqs</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li>Add.: 123 Furniture Ave</li>
+                    <li>Tel.: 647-777-7777</li>
+                    <li>Email: service@jkdeer.ca</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>SOCIALIZE WITH US</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Pinterest</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
+      <a href="#" class="gototop">Back to Top</a>
+
+
+      <!-- glide JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        var glide = new Glide('.glide', {
+          type: 'carousel',
+          perView: 4,
+          focusAt: 'center',
+          autoplay: 2000,
+          breakpoints: {
+            800: {
+              perView: 2
+            },
+            480: {
+              perView: 1
+            }
+          }
+        })
+        glide.mount()
+      </script>
+
+      <!-- Lightbox JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"> </script>
+      <script>
+        var granimInstance = new Granim({
+        element: '#gradient-background',
+        direction: 'left-right',
+        isPausedWhenNotInView: true,
+        states : {
+          "default-state": {
+            gradients: [
+              ['#888', '#008000']
+            ]
+          }
+        }
+      });
+      </script>
+
+      <!-- Granim JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+      <script>
+          var granimInstance = new Granim({
+              element: '#granim-canvas',
+              direction: 'top-bottom',
+              isPausedWhenNotInView: true,
+              states: {
+                  "default-state": {
+                      gradients: [
+                        ['#B8D8D8', '#7A9E9F'], 
+                        ['#EDE7F6', '#E8E8E8'], 
+                        ['#D5E4C3', '#A7D49B'], 
+                        ['#FFF9C4', '#FFF59D'], 
+                        ['#FFFDE7', '#FFF8E1'], 
+                        ['#EDEAE0', '#D8C3A5']
+                      ],
+                      transitionSpeed: 7000
+                  }
+              }
+          });
+      </script>
+
+      <!-- Leaflet JavaScript -->
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <script>
+          var map = L.map('map').setView([43.6532, -79.3832], 13); // Coordinates for Toronto
+
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '© OpenStreetMap contributors'
+          }).addTo(map);
+
+          L.marker([43.6532, -79.3832]).addTo(map) // Adjust the coordinates to the exact store location
+              .bindPopup('123 Furniture Ave, Toronto, ON, A1B 2C3').openPopup();
+      </script>
+
+       <!-- External JS -->
+       <script src="assets/js/main.js"></script>
+
+    </body>
+
+</html>
