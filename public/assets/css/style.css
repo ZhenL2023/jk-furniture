@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;300;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Comfortaa:wght@300..700&display=swap');
+
+/* styling for the nav and logo part */
+header {
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 20px;
+    height: 96px;
+    border-bottom: 1px solid gray; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+
+}
+
+.logo-container {
+    width: 15%;
+}
+     
+#logo {
+    width: 100%;
+    height: auto;
+    top: 16px;
+    display: flex;
+    justify-content: flex-start; /* Aligns the logo to the left */
+
+}
+
+/* meke the hanmburger disappeared and show the menu on top */
+.burger-icon {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3vw;
+    width: 630px;
+    height: 64px;
+    top: 16px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+
+.menu li{
+    padding-right: 30px;
+}
+
+
+#search-btn {
+    width: 170px;
+    height: 40px;
+    align-items: center;
+    background-color: #52a470 ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* hero part */
+.hero-section {
+    position: relative;
+    text-align: center; /* Center the text */
+}
+
+.hero-image {
+    width: 100%; /* Make the image expand to cover the width of the container */
+    height: auto; /* Adjust the height automatically */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text block */
+    color: white; /* Adjust text color based on your image */
+}
+
+/* BELOW HERO IMAGE PART */
+
+.below-hero .container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+    background-color: #f5f5f5;
+}
+
+.below-hero .text-content {
+    flex: 1;
+    padding-right: 80px; 
+    padding-left: 80px;
+}
+
+.below-hero .image-content {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.below-hero-img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.glide-text {
+    text-align: center; 
+    padding-top: 20px; 
+
+}
+
+.hero p{
+    font-size: 32px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+h1{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+h2{
+    font-family: "Cinzel Decorative", serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+
+
+/* style the glide */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .glide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    color: white; 
+    font-size: 24px; 
+  }
+
+  /* limit the size of the images */
+  .glide__slide img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* discount part style */
+#gradient-background {
+    position: relative;
+    height: 700px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#granim-canvas {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    width: calc(100% - 160px); 
+    margin: 0 auto; 
+    z-index: 1; 
+}
+
+.granim-logo-container img {
+    height: 150px; 
+}
+
+.text-content {
+    text-align: left;
+}
+
+h3{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* map part style */
+.store-location {
+    padding: 50px 20px;
+    color: #333; 
+}
+
+.store-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0; 
+}
+
+.store-details strong {
+    color: #333; 
+}
+
+#map {
+    width: 100%; 
+    margin: 20px auto; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+/* FOOTER PART */
+
+.footer-main {
+    padding: 40px 0;
+}
+
+.footer-main li{
+    font-family: Montserrat;
+    font-size: 16px;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 250px; 
+    max-width: 500px; 
+}
+
+.footer-column h3, .footer-column ul {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+.gototop {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #52a470;
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.footer-column ul li {
+    padding: 5px 0;
+}
+
+/* Styling for responsive layout on smaller screens */
+
+@media only screen and (max-width: 800px){
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    #logo{
+        width:190px;
+        height: auto;
+
+    }
+  
+    .burger-icon {
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* make the appearance of the line of the hamburgur */
+    .burger-icon span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #000000;
+        margin: 8px 0;
+    }
+
+    .menu,.hero-text{
+        display: none;
+    }
+
+    #search-btn{
+        display: none;
+    }
+
+    .granim-logo-container  {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: row; 
+        width: 90%; 
+        position: absolute; 
+        top: 80px; 
+        left:0;
+        z-index: 10; 
+        font-size: 12px;
+    }
+
+    /* When the menu has the 'active' class, display it */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Adjust the burger icon to be more visible in the layout */
+    .burger-icon {
+        display: block; 
+        cursor: pointer; 
+    }
+}
+
+    
+
